@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# pdf-to-epub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple tool for converting PDFs to EPUBs so you can read them comfortably on
+e-readers, phones, or any EPUB-friendly app.
 
-Currently, two official plugins are available:
+**Try it:** [pdf-to-epub-rho.vercel.app](https://pdf-to-epub-rho.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Drop in a PDF, get an EPUB back. That's it.
 
-## React Compiler
+## How it works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Everything runs in your browser — your PDF never leaves your device, no upload,
+no server, no account. The page uses [PDF.js](https://mozilla.github.io/pdf.js/)
+to extract text and render the cover, and [JSZip](https://stuk.github.io/jszip/)
+to package a valid EPUB 3.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Drag-and-drop or click-to-pick
+- Detects chapter boundaries (`Chapter N`, `One`/`Two`/..., `Prologue`, etc.)
+- Uses the PDF's first page as the EPUB cover
+- Optional title and author overrides; auto-fills from PDF metadata or filename
+- 100% client-side; works offline once loaded
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Limitations
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Text-based PDFs only — scanned/image-only PDFs need OCR first
+- Inline figures and footnotes aren't preserved
+- Complex multi-column layouts may not reflow perfectly
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Local development
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Production build: `npm run build` (output in `dist/`, deploys as a static site).
