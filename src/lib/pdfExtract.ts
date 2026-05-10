@@ -48,18 +48,22 @@ export async function extractPdf(
   }
 
   let cover: CoverImage | undefined;
+  if (options.renderCover && pdf.numPages > 0) {
+    try {
+      const coverPage = await pdf.getPage(1);
+      cover = await renderPageToCover(coverPage);
+      coverPage.cleanup();
+    } catch {
+      // cover is optional; carry on
+    }
+  }
+
   const pages: string[] = [];
   for (let i = 1; i <= pdf.numPages; i++) {
     const page = await pdf.getPage(i);
     const content = await page.getTextContent();
     pages.push(itemsToText(content.items as TextItem[]));
-    if (i === 1 && options.renderCover) {
-      try {
-        cover = await renderPageToCover(page);
-      } catch {
-        // cover is optional; carry on
-      }
-    }
+    page.cleanup();
     onProgress?.(i, pdf.numPages);
   }
   await pdf.destroy();
@@ -74,24 +78,30 @@ async function renderPageToCover(page: PDFPageProxy): Promise<CoverImage | undef
   const canvas = document.createElement("canvas");
   canvas.width = Math.ceil(viewport.width);
   canvas.height = Math.ceil(viewport.height);
-  const ctx = canvas.getContext("2d");
-  if (!ctx) return undefined;
-  ctx.fillStyle = "#ffffff";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  const renderTask = page.render({
-    canvasContext: ctx,
-    viewport,
-    canvas,
-  } as Parameters<PDFPageProxy["render"]>[0]);
-  const timeout = new Promise<never>((_, reject) =>
-    setTimeout(() => reject(new Error("cover render timeout")), 15000),
-  );
-  await Promise.race([renderTask.promise, timeout]);
-  const blob = await new Promise<Blob | null>((resolve) =>
-    canvas.toBlob((b) => resolve(b), "image/jpeg", 0.85),
-  );
-  if (!blob) return undefined;
-  return { blob, mediaType: "image/jpeg", ext: "jpg" };
+  // pdfjs v5 can hang on a detached canvas; mount off-screen.
+  canvas.style.position = "fixed";
+  canvas.style.left = "-99999px";
+  canvas.style.top = "-99999px";
+  canvas.style.pointerEvents = "none";
+  document.body.appendChild(canvas);
+  try {
+    const renderTask = page.render({
+      canvas,
+      viewport,
+      background: "#ffffff",
+    } as Parameters<PDFPageProxy["render"]>[0]);
+    const timeout = new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error("cover render timeout")), 30000),
+    );
+    await Promise.race([renderTask.promise, timeout]);
+    const blob = await new Promise<Blob | null>((resolve) =>
+      canvas.toBlob((b) => resolve(b), "image/jpeg", 0.85),
+    );
+    if (!blob) return undefined;
+    return { blob, mediaType: "image/jpeg", ext: "jpg" };
+  } finally {
+    canvas.remove();
+  }
 }
 
 function itemsToText(items: TextItem[]): string {
