@@ -6,13 +6,18 @@ export const SECONDS_PER_PAGE_ESTIMATE = 8;
 
 export type OcrAbortSignal = { aborted: boolean };
 
-// Heuristic: if first sample pages have very little text, the PDF is probably
-// scanned/image-only. Threshold is per-page average.
+// Heuristic: a scanned/image-only PDF has effectively no extractable text on
+// ANY page. We look at the page with the most characters in the sample —
+// if even that page has very little text, treat the whole PDF as scanned.
+// Using max rather than avg avoids being misled by blank or near-blank front
+// matter (covers, title pages, dedications) at the start of text-based books.
 export function looksScanned(samplePages: string[]): boolean {
   if (samplePages.length === 0) return false;
-  const total = samplePages.reduce((s, p) => s + p.replace(/\s+/g, "").length, 0);
-  const avg = total / samplePages.length;
-  return avg < 50;
+  const maxChars = samplePages.reduce(
+    (m, p) => Math.max(m, p.replace(/\s+/g, "").length),
+    0,
+  );
+  return maxChars < 100;
 }
 
 export async function ocrAllPages(

@@ -47,7 +47,7 @@ export async function inspectPdf(file: File): Promise<InspectResult> {
   const pdf = await openPdf(file);
   try {
     const meta = await getPdfMetadata(pdf);
-    const sample = await extractTextSample(pdf, 3);
+    const sample = await extractTextSample(pdf, 10);
     const isScanned = looksScanned(sample);
     return {
       pageCount: pdf.numPages,
