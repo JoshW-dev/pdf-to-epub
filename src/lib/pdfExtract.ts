@@ -1,6 +1,10 @@
 import * as pdfjsLib from "pdfjs-dist";
 import workerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
-import type { PDFPageProxy, TextItem } from "pdfjs-dist/types/src/display/api";
+import type {
+  PDFDocumentProxy,
+  PDFPageProxy,
+  TextItem,
+} from "pdfjs-dist/types/src/display/api";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -15,49 +19,34 @@ export type CoverImage = {
   ext: string;
 };
 
-export type ExtractResult = {
-  pages: string[];
-  meta: PdfMeta;
-  cover?: CoverImage;
-};
+export type PageProgress = (current: number, total: number) => void;
 
-export type ExtractProgress = (current: number, total: number) => void;
-
-export type ExtractOptions = {
-  renderCover?: boolean;
-};
-
-export async function extractPdf(
-  file: File,
-  onProgress?: ExtractProgress,
-  options: ExtractOptions = {},
-): Promise<ExtractResult> {
+export async function openPdf(file: File): Promise<PDFDocumentProxy> {
   const data = await file.arrayBuffer();
-  const pdf = await pdfjsLib.getDocument({ data }).promise;
+  return pdfjsLib.getDocument({ data }).promise;
+}
 
+export async function getPdfMetadata(pdf: PDFDocumentProxy): Promise<PdfMeta> {
   const meta: PdfMeta = {};
   try {
     const m = await pdf.getMetadata();
     const info = m.info as Record<string, unknown> | undefined;
     if (info) {
-      if (typeof info.Title === "string" && info.Title.trim()) meta.title = info.Title.trim();
-      if (typeof info.Author === "string" && info.Author.trim()) meta.author = info.Author.trim();
+      if (typeof info.Title === "string" && info.Title.trim())
+        meta.title = info.Title.trim();
+      if (typeof info.Author === "string" && info.Author.trim())
+        meta.author = info.Author.trim();
     }
   } catch {
     // metadata is optional
   }
+  return meta;
+}
 
-  let cover: CoverImage | undefined;
-  if (options.renderCover && pdf.numPages > 0) {
-    try {
-      const coverPage = await pdf.getPage(1);
-      cover = await renderPageToCover(coverPage);
-      coverPage.cleanup();
-    } catch {
-      // cover is optional; carry on
-    }
-  }
-
+export async function extractAllText(
+  pdf: PDFDocumentProxy,
+  onProgress?: PageProgress,
+): Promise<string[]> {
   const pages: string[] = [];
   for (let i = 1; i <= pdf.numPages; i++) {
     const page = await pdf.getPage(i);
@@ -66,14 +55,42 @@ export async function extractPdf(
     page.cleanup();
     onProgress?.(i, pdf.numPages);
   }
-  await pdf.destroy();
-  return { pages, meta, cover };
+  return pages;
 }
 
-async function renderPageToCover(page: PDFPageProxy): Promise<CoverImage | undefined> {
-  const baseViewport = page.getViewport({ scale: 1 });
-  const targetWidth = 1200;
-  const scale = Math.min(targetWidth / baseViewport.width, 3);
+export async function extractTextSample(
+  pdf: PDFDocumentProxy,
+  sampleSize = 3,
+): Promise<string[]> {
+  const n = Math.min(sampleSize, pdf.numPages);
+  const out: string[] = [];
+  for (let i = 1; i <= n; i++) {
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    out.push(itemsToText(content.items as TextItem[]));
+    page.cleanup();
+  }
+  return out;
+}
+
+export async function renderCover(
+  pdf: PDFDocumentProxy,
+): Promise<CoverImage | undefined> {
+  if (pdf.numPages === 0) return undefined;
+  try {
+    const coverPage = await pdf.getPage(1);
+    const cover = await renderPageToCover(coverPage);
+    coverPage.cleanup();
+    return cover;
+  } catch {
+    return undefined;
+  }
+}
+
+export async function renderPageToCanvas(
+  page: PDFPageProxy,
+  scale: number,
+): Promise<HTMLCanvasElement> {
   const viewport = page.getViewport({ scale });
   const canvas = document.createElement("canvas");
   canvas.width = Math.ceil(viewport.width);
@@ -91,9 +108,22 @@ async function renderPageToCover(page: PDFPageProxy): Promise<CoverImage | undef
       background: "#ffffff",
     } as Parameters<PDFPageProxy["render"]>[0]);
     const timeout = new Promise<never>((_, reject) =>
-      setTimeout(() => reject(new Error("cover render timeout")), 30000),
+      setTimeout(() => reject(new Error("page render timeout")), 30000),
     );
     await Promise.race([renderTask.promise, timeout]);
+    return canvas;
+  } catch (err) {
+    canvas.remove();
+    throw err;
+  }
+}
+
+async function renderPageToCover(page: PDFPageProxy): Promise<CoverImage | undefined> {
+  const baseViewport = page.getViewport({ scale: 1 });
+  const targetWidth = 1200;
+  const scale = Math.min(targetWidth / baseViewport.width, 3);
+  const canvas = await renderPageToCanvas(page, scale);
+  try {
     const blob = await new Promise<Blob | null>((resolve) =>
       canvas.toBlob((b) => resolve(b), "image/jpeg", 0.85),
     );

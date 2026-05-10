@@ -1,9 +1,25 @@
 import { useCallback, useRef, useState } from "react";
-import { convertPdfToEpub } from "./lib/convert";
+import { convertPdfToEpub, inspectPdf, type ConvertStage } from "./lib/convert";
 
 type Status =
   | { kind: "idle" }
-  | { kind: "working"; stage: string; current: number; total: number; fileName: string }
+  | { kind: "inspecting"; fileName: string }
+  | {
+      kind: "scan-confirm";
+      file: File;
+      fileName: string;
+      pageCount: number;
+      estimatedSeconds: number;
+    }
+  | {
+      kind: "working";
+      stage: ConvertStage;
+      label: string;
+      current: number;
+      total: number;
+      fileName: string;
+      isOcr: boolean;
+    }
   | {
       kind: "done";
       url: string;
@@ -12,6 +28,7 @@ type Status =
       pages: number;
       size: number;
       hasCover: boolean;
+      usedOcr: boolean;
     }
   | { kind: "error"; message: string };
 
@@ -23,29 +40,44 @@ function App() {
   const [author, setAuthor] = useState("");
   const [dragOver, setDragOver] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const abortRef = useRef<{ aborted: boolean }>({ aborted: false });
 
-  const handleFile = useCallback(
-    async (file: File) => {
-      if (!file.name.toLowerCase().endsWith(".pdf")) {
-        setStatus({ kind: "error", message: "Please drop a .pdf file." });
-        return;
-      }
+  const runConversion = useCallback(
+    async (file: File, useOcr: boolean) => {
+      abortRef.current = { aborted: false };
       setStatus({
         kind: "working",
-        stage: "Reading PDF",
+        stage: useOcr ? "ocr" : "extract",
+        label: useOcr ? "Loading OCR engine" : "Extracting pages",
         current: 0,
         total: 1,
         fileName: file.name,
+        isOcr: useOcr,
       });
       try {
         const result = await convertPdfToEpub(file, {
           detectChapters,
           includeCover,
+          useOcr,
           title: title || undefined,
           author: author || undefined,
+          abort: abortRef.current,
           onProgress: (stage, current, total) => {
-            const label = stage === "extract" ? "Extracting pages" : "Building EPUB";
-            setStatus({ kind: "working", stage: label, current, total, fileName: file.name });
+            const label =
+              stage === "extract"
+                ? "Extracting pages"
+                : stage === "ocr"
+                  ? "Running OCR"
+                  : "Building EPUB";
+            setStatus({
+              kind: "working",
+              stage,
+              label,
+              current,
+              total,
+              fileName: file.name,
+              isOcr: useOcr,
+            });
           },
         });
         const url = URL.createObjectURL(result.blob);
@@ -57,8 +89,13 @@ function App() {
           pages: result.pageCount,
           size: result.blob.size,
           hasCover: result.hasCover,
+          usedOcr: result.usedOcr,
         });
       } catch (e) {
+        if (abortRef.current.aborted) {
+          setStatus({ kind: "idle" });
+          return;
+        }
         setStatus({
           kind: "error",
           message: e instanceof Error ? e.message : "Conversion failed",
@@ -66,6 +103,36 @@ function App() {
       }
     },
     [detectChapters, includeCover, title, author],
+  );
+
+  const handleFile = useCallback(
+    async (file: File) => {
+      if (!file.name.toLowerCase().endsWith(".pdf")) {
+        setStatus({ kind: "error", message: "Please drop a .pdf file." });
+        return;
+      }
+      setStatus({ kind: "inspecting", fileName: file.name });
+      try {
+        const inspection = await inspectPdf(file);
+        if (inspection.isScanned) {
+          setStatus({
+            kind: "scan-confirm",
+            file,
+            fileName: file.name,
+            pageCount: inspection.pageCount,
+            estimatedSeconds: inspection.estimatedOcrSeconds,
+          });
+          return;
+        }
+        await runConversion(file, false);
+      } catch (e) {
+        setStatus({
+          kind: "error",
+          message: e instanceof Error ? e.message : "Could not read PDF",
+        });
+      }
+    },
+    [runConversion],
   );
 
   const onDrop = useCallback(
@@ -90,6 +157,10 @@ function App() {
     if (status.kind === "done") URL.revokeObjectURL(status.url);
     setStatus({ kind: "idle" });
     if (inputRef.current) inputRef.current.value = "";
+  };
+
+  const cancelOcr = () => {
+    abortRef.current.aborted = true;
   };
 
   return (
@@ -203,7 +274,8 @@ function App() {
                 Drop a PDF here, or click to choose
               </p>
               <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">
-                Text-based PDFs only · scanned books need OCR first
+                Text-based PDFs are quick · scanned PDFs are detected automatically
+                and run through OCR
               </p>
               <input
                 ref={inputRef}
@@ -223,14 +295,70 @@ function App() {
             </div>
           ) : null}
 
+          {status.kind === "inspecting" && (
+            <div className="rounded-xl bg-paper-50 dark:bg-paper-900/20 ring-1 ring-paper-200 dark:ring-paper-800 p-5 text-center">
+              <p className="text-sm text-stone-700 dark:text-stone-200">
+                Inspecting{" "}
+                <span className="font-mono text-xs">{status.fileName}</span>…
+              </p>
+            </div>
+          )}
+
+          {status.kind === "scan-confirm" && (
+            <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 ring-1 ring-amber-300 dark:ring-amber-800 p-5">
+              <h3 className="font-serif text-lg font-semibold text-stone-900 dark:text-paper-50 mb-1">
+                This looks like a scanned PDF
+              </h3>
+              <p className="text-sm text-stone-700 dark:text-stone-200 leading-relaxed">
+                There's no embedded text, so we'll need to run OCR to read it.
+                That takes much longer than a normal conversion — roughly{" "}
+                <strong>{formatDuration(status.estimatedSeconds)}</strong> for{" "}
+                {status.pageCount} page{status.pageCount === 1 ? "" : "s"} on a
+                modern laptop. The OCR engine (~10 MB) will load on first use.
+                Keep this tab open while it runs.
+              </p>
+              <p className="text-xs text-stone-500 dark:text-stone-400 mt-2">
+                English only. Multi-column layouts and stylized fonts may produce
+                imperfect text.
+              </p>
+              <div className="flex gap-2 mt-4">
+                <button
+                  type="button"
+                  onClick={() => runConversion(status.file, true)}
+                  className="flex-1 inline-flex justify-center items-center rounded-md bg-stone-900 dark:bg-paper-500 px-4 py-2.5 text-sm font-medium text-paper-50 dark:text-stone-900 hover:bg-stone-800 dark:hover:bg-paper-400 transition shadow-sm"
+                >
+                  Run OCR
+                </button>
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="rounded-md px-4 py-2.5 text-sm font-medium text-stone-700 dark:text-stone-200 ring-1 ring-stone-300 dark:ring-stone-600 hover:bg-stone-100 dark:hover:bg-stone-700 transition"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
+
           {status.kind === "working" && (
             <div className="space-y-2 py-2" role="status">
-              <p className="text-sm text-stone-700 dark:text-stone-200 truncate">
-                {status.stage}:{" "}
-                <span className="font-mono text-xs text-stone-600 dark:text-stone-300">
-                  {status.fileName}
-                </span>
-              </p>
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-sm text-stone-700 dark:text-stone-200 truncate">
+                  {status.label}
+                  {status.isOcr && status.stage === "ocr"
+                    ? ` · page ${status.current} of ${status.total}`
+                    : ""}
+                </p>
+                {status.isOcr && (
+                  <button
+                    type="button"
+                    onClick={cancelOcr}
+                    className="text-xs text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-paper-100 underline underline-offset-2"
+                  >
+                    Cancel
+                  </button>
+                )}
+              </div>
               <div className="h-2 bg-stone-200 dark:bg-stone-700 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-paper-500 dark:bg-paper-400 transition-all"
@@ -239,9 +367,14 @@ function App() {
                   }}
                 />
               </div>
-              <p className="text-xs text-stone-500 dark:text-stone-400">
-                {status.current} / {status.total}
-              </p>
+              <div className="flex items-center justify-between text-xs text-stone-500 dark:text-stone-400">
+                <span className="font-mono truncate">{status.fileName}</span>
+                {status.isOcr && status.stage === "ocr" && (
+                  <span>
+                    ~{formatDuration((status.total - status.current) * 8)} remaining
+                  </span>
+                )}
+              </div>
             </div>
           )}
 
@@ -251,7 +384,8 @@ function App() {
                 <p className="text-sm font-medium text-paper-900 dark:text-paper-100">
                   Done — {status.chapters} chapter{status.chapters === 1 ? "" : "s"}{" "}
                   from {status.pages} page{status.pages === 1 ? "" : "s"}
-                  {status.hasCover ? " · cover included" : ""} (
+                  {status.hasCover ? " · cover included" : ""}
+                  {status.usedOcr ? " · via OCR" : ""} (
                   {(status.size / 1024).toFixed(1)} KB)
                 </p>
               </div>
@@ -288,12 +422,12 @@ function App() {
           <Step
             n={1}
             title="Drop your PDF"
-            body="Pick any text-based PDF — novels, manuals, papers, ebooks."
+            body="Pick any PDF — text-based or scanned. We'll detect which kind and pick the right pipeline."
           />
           <Step
             n={2}
             title="We do the work"
-            body="Text extraction, chapter detection, and EPUB packaging happen in your browser."
+            body="Text extraction (or OCR for scans), chapter detection, and EPUB packaging — all in your browser."
           />
           <Step
             n={3}
@@ -305,7 +439,7 @@ function App() {
 
       <footer className="border-t border-stone-200 dark:border-stone-800 mt-4">
         <div className="max-w-5xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-600 dark:text-stone-400">
-          <p>PDF.js · JSZip · EPUB 3 · zero server work</p>
+          <p>PDF.js · Tesseract.js · JSZip · EPUB 3 · zero server work</p>
           <p>
             Open source on{" "}
             <a
@@ -321,6 +455,15 @@ function App() {
       </footer>
     </div>
   );
+}
+
+function formatDuration(seconds: number): string {
+  if (seconds < 60) return `${Math.max(1, Math.round(seconds))}s`;
+  const minutes = Math.round(seconds / 60);
+  if (minutes < 60) return `${minutes} min`;
+  const hours = Math.floor(minutes / 60);
+  const rem = minutes % 60;
+  return rem === 0 ? `${hours} hr` : `${hours} hr ${rem} min`;
 }
 
 function Step({ n, title, body }: { n: number; title: string; body: string }) {

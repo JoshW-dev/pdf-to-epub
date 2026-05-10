@@ -1,13 +1,37 @@
-import { extractPdf } from "./pdfExtract";
+import {
+  openPdf,
+  getPdfMetadata,
+  extractTextSample,
+  extractAllText,
+  renderCover,
+  type PdfMeta,
+} from "./pdfExtract";
 import { buildChapters } from "./structure";
 import { buildEpub } from "./buildEpub";
+import {
+  looksScanned,
+  ocrAllPages,
+  SECONDS_PER_PAGE_ESTIMATE,
+  type OcrAbortSignal,
+} from "./ocr";
+
+export type InspectResult = {
+  pageCount: number;
+  isScanned: boolean;
+  estimatedOcrSeconds: number;
+  meta: PdfMeta;
+};
+
+export type ConvertStage = "extract" | "ocr" | "build";
 
 export type ConvertOptions = {
   detectChapters: boolean;
   includeCover: boolean;
+  useOcr: boolean;
   title?: string;
   author?: string;
-  onProgress?: (stage: "extract" | "build", current: number, total: number) => void;
+  abort?: OcrAbortSignal;
+  onProgress?: (stage: ConvertStage, current: number, total: number) => void;
 };
 
 export type ConvertResult = {
@@ -16,17 +40,52 @@ export type ConvertResult = {
   chapterCount: number;
   pageCount: number;
   hasCover: boolean;
+  usedOcr: boolean;
 };
+
+export async function inspectPdf(file: File): Promise<InspectResult> {
+  const pdf = await openPdf(file);
+  try {
+    const meta = await getPdfMetadata(pdf);
+    const sample = await extractTextSample(pdf, 3);
+    const isScanned = looksScanned(sample);
+    return {
+      pageCount: pdf.numPages,
+      isScanned,
+      estimatedOcrSeconds: pdf.numPages * SECONDS_PER_PAGE_ESTIMATE,
+      meta,
+    };
+  } finally {
+    await pdf.destroy();
+  }
+}
 
 export async function convertPdfToEpub(
   file: File,
   opts: ConvertOptions,
 ): Promise<ConvertResult> {
-  const { pages, meta, cover } = await extractPdf(
-    file,
-    (c, t) => opts.onProgress?.("extract", c, t),
-    { renderCover: opts.includeCover },
-  );
+  const pdf = await openPdf(file);
+  let pages: string[];
+  let cover;
+  let meta: PdfMeta;
+  try {
+    meta = await getPdfMetadata(pdf);
+    cover = opts.includeCover ? await renderCover(pdf) : undefined;
+
+    if (opts.useOcr) {
+      pages = await ocrAllPages(
+        pdf,
+        (c, t) => opts.onProgress?.("ocr", c, t),
+        opts.abort,
+      );
+    } else {
+      pages = await extractAllText(pdf, (c, t) =>
+        opts.onProgress?.("extract", c, t),
+      );
+    }
+  } finally {
+    await pdf.destroy();
+  }
 
   const chapters = buildChapters(pages, opts.detectChapters);
   opts.onProgress?.("build", 0, 1);
@@ -48,6 +107,7 @@ export async function convertPdfToEpub(
     chapterCount: chapters.length,
     pageCount: pages.length,
     hasCover: !!cover,
+    usedOcr: opts.useOcr,
   };
 }
 
