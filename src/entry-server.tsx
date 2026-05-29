@@ -17,4 +17,10 @@ export function render(url: string): { html: string; head: string } {
 }
 
 export { ROUTES };
-export { SITE_URL, canonicalUrl } from "./site/config";
+export {
+  SITE_URL,
+  SITE_NAME,
+  SITE_TAGLINE,
+  GITHUB_URL,
+  canonicalUrl,
+} from "./site/config";

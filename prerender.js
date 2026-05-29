@@ -24,9 +24,8 @@ if (!template.includes("<!--app-html-->") || !template.includes("<!--app-head-->
   );
 }
 
-const { render, ROUTES, SITE_URL, canonicalUrl } = await import(
-  "./dist-ssr/entry-server.js"
-);
+const { render, ROUTES, SITE_URL, SITE_NAME, SITE_TAGLINE, GITHUB_URL, canonicalUrl } =
+  await import("./dist-ssr/entry-server.js");
 
 for (const { config } of ROUTES) {
   const { html, head } = render(config.path);
@@ -54,3 +53,26 @@ const entries = ROUTES.map(({ config }) => {
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}\n</urlset>\n`;
 fs.writeFileSync(path.join(dist, "sitemap.xml"), sitemap);
 console.log(`wrote sitemap.xml (${ROUTES.length} urls) for ${SITE_URL}`);
+
+// llms.txt — a concise, LLM-friendly index of the site (llmstxt.org convention).
+const llms = [
+  `# ${SITE_NAME}`,
+  ``,
+  `> ${SITE_TAGLINE}. No signup, no uploads — files never leave the user's device.`,
+  ``,
+  `${SITE_NAME} is a set of free, client-side file converters. All processing runs in the user's browser; no files are uploaded to any server.`,
+  ``,
+  `## Converters`,
+  ``,
+  ...ROUTES.map(
+    ({ config }) => `- [${config.h1}](${canonicalUrl(config)}): ${config.metaDescription}`,
+  ),
+  ``,
+  `## More`,
+  ``,
+  `- [Sitemap](${SITE_URL}/sitemap.xml)`,
+  `- [Source code](${GITHUB_URL})`,
+  ``,
+].join("\n");
+fs.writeFileSync(path.join(dist, "llms.txt"), llms);
+console.log(`wrote llms.txt (${ROUTES.length} converters)`);
