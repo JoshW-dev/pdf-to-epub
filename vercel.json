@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/pdf-to-epub", "destination": "/", "permanent": true },
+    { "source": "/pdf-to-epub.html", "destination": "/", "permanent": true }
+  ]
+}
