@@ -94,14 +94,14 @@ export function ProgressView({
   return (
     <div className="space-y-2 py-2" role="status">
       <div className="flex items-center justify-between gap-3">
-        <p className="text-sm text-stone-700 dark:text-stone-200 truncate">
+        <p className="min-w-0 truncate text-sm text-stone-700 dark:text-stone-200">
           {label}
         </p>
         {onCancel && (
           <button
             type="button"
             onClick={onCancel}
-            className="text-xs text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-paper-100 underline underline-offset-2"
+            className="shrink-0 text-xs text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-paper-100 underline underline-offset-2"
           >
             Cancel
           </button>
@@ -113,9 +113,9 @@ export function ProgressView({
           style={{ width: `${pct}%` }}
         />
       </div>
-      <div className="flex items-center justify-between text-xs text-stone-500 dark:text-stone-400">
-        <span className="font-mono truncate">{fileName}</span>
-        {footRight && <span>{footRight}</span>}
+      <div className="flex items-center justify-between gap-2 text-xs text-stone-500 dark:text-stone-400">
+        <span className="min-w-0 truncate font-mono">{fileName}</span>
+        {footRight && <span className="shrink-0">{footRight}</span>}
       </div>
     </div>
   );
@@ -132,25 +132,34 @@ export function DoneView({
   downloadName: string;
   onReset: () => void;
 }) {
+  const ext = downloadName.includes(".")
+    ? downloadName.slice(downloadName.lastIndexOf(".") + 1).toUpperCase()
+    : "file";
   return (
     <div className="space-y-3">
       <div className="rounded-lg bg-paper-50 dark:bg-paper-900/30 ring-1 ring-paper-200 dark:ring-paper-700 p-4">
         <p className="text-sm font-medium text-paper-900 dark:text-paper-100">
           {summary}
         </p>
+        <p
+          className="mt-1 text-xs text-paper-800/80 dark:text-paper-200/70 truncate"
+          title={downloadName}
+        >
+          {downloadName}
+        </p>
       </div>
       <div className="flex gap-2">
         <a
           href={downloadHref}
           download={downloadName}
-          className="flex-1 inline-flex justify-center items-center rounded-md bg-stone-900 dark:bg-paper-500 px-4 py-2.5 text-sm font-medium text-paper-50 dark:text-stone-900 hover:bg-stone-800 dark:hover:bg-paper-400 transition shadow-sm"
+          className="flex-1 min-w-0 inline-flex justify-center items-center rounded-md bg-stone-900 dark:bg-paper-500 px-4 py-2.5 text-sm font-medium text-paper-50 dark:text-stone-900 hover:bg-stone-800 dark:hover:bg-paper-400 transition shadow-sm"
         >
-          Download {downloadName}
+          Download {ext}
         </a>
         <button
           type="button"
           onClick={onReset}
-          className="rounded-md px-4 py-2.5 text-sm font-medium text-stone-700 dark:text-stone-200 ring-1 ring-stone-300 dark:ring-stone-600 hover:bg-stone-100 dark:hover:bg-stone-700 transition"
+          className="shrink-0 rounded-md px-4 py-2.5 text-sm font-medium text-stone-700 dark:text-stone-200 ring-1 ring-stone-300 dark:ring-stone-600 hover:bg-stone-100 dark:hover:bg-stone-700 transition"
         >
           Convert another
         </button>

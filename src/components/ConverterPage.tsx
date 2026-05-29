@@ -46,14 +46,14 @@ export default function ConverterPage({
   return (
     <div className="min-h-screen font-sans text-stone-800 dark:text-stone-200">
       <header className="bg-paper-500 dark:bg-stone-800/90 border-b border-paper-700/30 dark:border-stone-700 backdrop-blur">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2 group">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <a href="/" className="flex shrink-0 items-center gap-2 group">
             <BookGlyph className="h-6 w-6 text-stone-900 dark:text-paper-100" />
             <span className="font-serif text-xl font-semibold tracking-tight text-stone-900 dark:text-paper-50 group-hover:text-stone-700 dark:group-hover:text-paper-100 transition">
               {SITE_NAME}
             </span>
           </a>
-          <nav className="flex items-center gap-4 sm:gap-5 text-sm">
+          <nav className="flex items-center gap-4 sm:gap-5 text-sm whitespace-nowrap">
             <NavLink href="/" active={config.path === "/"}>
               PDF to EPUB
             </NavLink>

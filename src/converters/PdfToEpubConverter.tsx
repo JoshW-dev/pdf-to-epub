@@ -212,7 +212,7 @@ export default function PdfToEpubConverter() {
 
       {status.kind === "inspecting" && (
         <div className="rounded-xl bg-paper-50 dark:bg-paper-900/20 ring-1 ring-paper-200 dark:ring-paper-800 p-5 text-center">
-          <p className="text-sm text-stone-700 dark:text-stone-200">
+          <p className="text-sm text-stone-700 dark:text-stone-200 break-words">
             Inspecting <span className="font-mono text-xs">{status.fileName}</span>…
           </p>
         </div>
