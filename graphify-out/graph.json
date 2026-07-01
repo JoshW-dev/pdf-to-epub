@@ -1,0 +1,5170 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "tsconfig.node.json",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L1",
+      "id": "tsconfig_node_json",
+      "community": 6,
+      "norm_label": "tsconfig.node.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions",
+      "community": 6,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_tsbuildinfofile",
+      "community": 6,
+      "norm_label": "tsbuildinfofile"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_target",
+      "community": 6,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_lib",
+      "community": 6,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_module",
+      "community": 6,
+      "norm_label": "module"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L7",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_types",
+      "community": 6,
+      "norm_label": "types"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_skiplibcheck",
+      "community": 6,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_moduleresolution",
+      "community": 6,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "community": 6,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L13",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "community": 6,
+      "norm_label": "verbatimmodulesyntax"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_moduledetection",
+      "community": 6,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_noemit",
+      "community": 6,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_nounusedlocals",
+      "community": 6,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L19",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_nounusedparameters",
+      "community": 6,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L20",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "community": 6,
+      "norm_label": "erasablesyntaxonly"
+    },
+    {
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L21",
+      "id": "pdf_to_epub_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "community": 6,
+      "norm_label": "nofallthroughcasesinswitch"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L23",
+      "id": "pdf_to_epub_tsconfig_node_include",
+      "community": 6,
+      "norm_label": "include"
+    },
+    {
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1",
+      "id": "tailwind_config_js",
+      "community": 14,
+      "norm_label": "tailwind.config.js"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "id": "vercel_json",
+      "community": 12,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "id": "pdf_to_epub_vercel_schema",
+      "community": 12,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "cleanUrls",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "id": "pdf_to_epub_vercel_cleanurls",
+      "community": 12,
+      "norm_label": "cleanurls"
+    },
+    {
+      "label": "trailingSlash",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "id": "pdf_to_epub_vercel_trailingslash",
+      "community": 12,
+      "norm_label": "trailingslash"
+    },
+    {
+      "label": "redirects",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L5",
+      "id": "pdf_to_epub_vercel_redirects",
+      "community": 12,
+      "norm_label": "redirects"
+    },
+    {
+      "label": "tsconfig.app.json",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L1",
+      "id": "tsconfig_app_json",
+      "community": 5,
+      "norm_label": "tsconfig.app.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions",
+      "community": 5,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_tsbuildinfofile",
+      "community": 5,
+      "norm_label": "tsbuildinfofile"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_target",
+      "community": 5,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_lib",
+      "community": 5,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_module",
+      "community": 5,
+      "norm_label": "module"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_types",
+      "community": 5,
+      "norm_label": "types"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L8",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_skiplibcheck",
+      "community": 5,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_moduleresolution",
+      "community": 5,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "community": 5,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "community": 5,
+      "norm_label": "verbatimmodulesyntax"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_moduledetection",
+      "community": 5,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L15",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_noemit",
+      "community": 5,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_jsx",
+      "community": 5,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_nounusedlocals",
+      "community": 5,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L20",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_nounusedparameters",
+      "community": 5,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "community": 5,
+      "norm_label": "erasablesyntaxonly"
+    },
+    {
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L22",
+      "id": "pdf_to_epub_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "community": 5,
+      "norm_label": "nofallthroughcasesinswitch"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L24",
+      "id": "pdf_to_epub_tsconfig_app_include",
+      "community": 5,
+      "norm_label": "include"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 4,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "pdf_to_epub_package_name",
+      "community": 4,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "pdf_to_epub_package_private",
+      "community": 4,
+      "norm_label": "private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "pdf_to_epub_package_version",
+      "community": 4,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "pdf_to_epub_package_type",
+      "community": 4,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "pdf_to_epub_package_scripts",
+      "community": 4,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "pdf_to_epub_package_scripts_dev",
+      "community": 4,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "pdf_to_epub_package_scripts_build",
+      "community": 4,
+      "norm_label": "build"
+    },
+    {
+      "label": "build:client",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "pdf_to_epub_package_scripts_build_client",
+      "community": 4,
+      "norm_label": "build:client"
+    },
+    {
+      "label": "build:ssr",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "pdf_to_epub_package_scripts_build_ssr",
+      "community": 4,
+      "norm_label": "build:ssr"
+    },
+    {
+      "label": "prerender",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "pdf_to_epub_package_scripts_prerender",
+      "community": 4,
+      "norm_label": "prerender"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "pdf_to_epub_package_scripts_lint",
+      "community": 4,
+      "norm_label": "lint"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "pdf_to_epub_package_scripts_preview",
+      "community": 4,
+      "norm_label": "preview"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "pdf_to_epub_package_dependencies",
+      "community": 4,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "jspdf",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "pdf_to_epub_package_dependencies_jspdf",
+      "community": 4,
+      "norm_label": "jspdf"
+    },
+    {
+      "label": "jszip",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "pdf_to_epub_package_dependencies_jszip",
+      "community": 4,
+      "norm_label": "jszip"
+    },
+    {
+      "label": "pdfjs-dist",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "pdf_to_epub_package_dependencies_pdfjs_dist",
+      "community": 4,
+      "norm_label": "pdfjs-dist"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "pdf_to_epub_package_dependencies_react",
+      "community": 4,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "pdf_to_epub_package_dependencies_react_dom",
+      "community": 4,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "tesseract.js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "pdf_to_epub_package_dependencies_tesseract_js",
+      "community": 4,
+      "norm_label": "tesseract.js"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "pdf_to_epub_package_devdependencies",
+      "community": 7,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@eslint/js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "pdf_to_epub_package_devdependencies_eslint_js",
+      "community": 7,
+      "norm_label": "@eslint/js"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "pdf_to_epub_package_devdependencies_types_node",
+      "community": 7,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "id": "pdf_to_epub_package_devdependencies_types_react",
+      "community": 7,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "pdf_to_epub_package_devdependencies_types_react_dom",
+      "community": 7,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "pdf_to_epub_package_devdependencies_vitejs_plugin_react",
+      "community": 7,
+      "norm_label": "@vitejs/plugin-react"
+    },
+    {
+      "label": "autoprefixer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "id": "pdf_to_epub_package_devdependencies_autoprefixer",
+      "community": 7,
+      "norm_label": "autoprefixer"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "id": "pdf_to_epub_package_devdependencies_eslint",
+      "community": 7,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "id": "pdf_to_epub_package_devdependencies_eslint_plugin_react_hooks",
+      "community": 7,
+      "norm_label": "eslint-plugin-react-hooks"
+    },
+    {
+      "label": "eslint-plugin-react-refresh",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "pdf_to_epub_package_devdependencies_eslint_plugin_react_refresh",
+      "community": 7,
+      "norm_label": "eslint-plugin-react-refresh"
+    },
+    {
+      "label": "globals",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "id": "pdf_to_epub_package_devdependencies_globals",
+      "community": 7,
+      "norm_label": "globals"
+    },
+    {
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "id": "pdf_to_epub_package_devdependencies_postcss",
+      "community": 7,
+      "norm_label": "postcss"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "id": "pdf_to_epub_package_devdependencies_tailwindcss",
+      "community": 7,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "id": "pdf_to_epub_package_devdependencies_typescript",
+      "community": 7,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "typescript-eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "id": "pdf_to_epub_package_devdependencies_typescript_eslint",
+      "community": 7,
+      "norm_label": "typescript-eslint"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "id": "pdf_to_epub_package_devdependencies_vite",
+      "community": 7,
+      "norm_label": "vite"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "id": "tsconfig_json",
+      "community": 13,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "id": "pdf_to_epub_tsconfig_files",
+      "community": 13,
+      "norm_label": "files"
+    },
+    {
+      "label": "references",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "id": "pdf_to_epub_tsconfig_references",
+      "community": 13,
+      "norm_label": "references"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 15,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 16,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "prerender.js",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L1",
+      "id": "prerender_js",
+      "community": 11,
+      "norm_label": "prerender.js"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L15",
+      "id": "pdf_to_epub_prerender_root",
+      "community": 11,
+      "norm_label": "root"
+    },
+    {
+      "label": "dist",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L16",
+      "id": "pdf_to_epub_prerender_dist",
+      "community": 11,
+      "norm_label": "dist"
+    },
+    {
+      "label": "template",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L18",
+      "id": "pdf_to_epub_prerender_template",
+      "community": 11,
+      "norm_label": "template"
+    },
+    {
+      "label": "entries",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L47",
+      "id": "pdf_to_epub_prerender_entries",
+      "community": 11,
+      "norm_label": "entries"
+    },
+    {
+      "label": "llms",
+      "file_type": "code",
+      "source_file": "prerender.js",
+      "source_location": "L58",
+      "id": "pdf_to_epub_prerender_llms",
+      "community": 11,
+      "norm_label": "llms"
+    },
+    {
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1",
+      "id": "postcss_config_js",
+      "community": 17,
+      "norm_label": "postcss.config.js"
+    },
+    {
+      "label": "entry-client.tsx",
+      "file_type": "code",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L1",
+      "id": "src_entry_client_tsx",
+      "community": 0,
+      "norm_label": "entry-client.tsx"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L7",
+      "id": "src_entry_client_route",
+      "community": 0,
+      "norm_label": "route"
+    },
+    {
+      "label": "desc",
+      "file_type": "code",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L12",
+      "id": "src_entry_client_desc",
+      "community": 0,
+      "norm_label": "desc"
+    },
+    {
+      "label": "entry-server.tsx",
+      "file_type": "code",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L1",
+      "id": "src_entry_server_tsx",
+      "community": 0,
+      "norm_label": "entry-server.tsx"
+    },
+    {
+      "label": "render()",
+      "file_type": "code",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L11",
+      "id": "src_entry_server_render",
+      "community": 0,
+      "norm_label": "render()"
+    },
+    {
+      "label": "parts.tsx",
+      "file_type": "code",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L1",
+      "id": "src_converters_parts_tsx",
+      "community": 8,
+      "norm_label": "parts.tsx"
+    },
+    {
+      "label": "Dropzone()",
+      "file_type": "code",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L8",
+      "id": "converters_parts_dropzone",
+      "community": 8,
+      "norm_label": "dropzone()"
+    },
+    {
+      "label": "ProgressView()",
+      "file_type": "code",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L78",
+      "id": "converters_parts_progressview",
+      "community": 8,
+      "norm_label": "progressview()"
+    },
+    {
+      "label": "DoneView()",
+      "file_type": "code",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L124",
+      "id": "converters_parts_doneview",
+      "community": 8,
+      "norm_label": "doneview()"
+    },
+    {
+      "label": "PdfToEpubConverter.tsx",
+      "file_type": "code",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L1",
+      "id": "src_converters_pdftoepubconverter_tsx",
+      "community": 8,
+      "norm_label": "pdftoepubconverter.tsx"
+    },
+    {
+      "label": "formatDuration()",
+      "file_type": "code",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L5",
+      "id": "converters_pdftoepubconverter_formatduration",
+      "community": 8,
+      "norm_label": "formatduration()"
+    },
+    {
+      "label": "Status",
+      "file_type": "code",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L14",
+      "id": "converters_pdftoepubconverter_status",
+      "community": 8,
+      "norm_label": "status"
+    },
+    {
+      "label": "PdfToEpubConverter()",
+      "file_type": "code",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L45",
+      "id": "converters_pdftoepubconverter_pdftoepubconverter",
+      "community": 8,
+      "norm_label": "pdftoepubconverter()"
+    },
+    {
+      "label": "EpubToPdfConverter.tsx",
+      "file_type": "code",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L1",
+      "id": "src_converters_epubtopdfconverter_tsx",
+      "community": 8,
+      "norm_label": "epubtopdfconverter.tsx"
+    },
+    {
+      "label": "Status",
+      "file_type": "code",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L5",
+      "id": "converters_epubtopdfconverter_status",
+      "community": 8,
+      "norm_label": "status"
+    },
+    {
+      "label": "PAGE_SIZES",
+      "file_type": "code",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L18",
+      "id": "converters_epubtopdfconverter_page_sizes",
+      "community": 8,
+      "norm_label": "page_sizes"
+    },
+    {
+      "label": "EpubToPdfConverter()",
+      "file_type": "code",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L24",
+      "id": "converters_epubtopdfconverter_epubtopdfconverter",
+      "community": 8,
+      "norm_label": "epubtopdfconverter()"
+    },
+    {
+      "label": "icons.tsx",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L1",
+      "id": "src_components_icons_tsx",
+      "community": 9,
+      "norm_label": "icons.tsx"
+    },
+    {
+      "label": "IconProps",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L3",
+      "id": "components_icons_iconprops",
+      "community": 9,
+      "norm_label": "iconprops"
+    },
+    {
+      "label": "BookGlyph()",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L5",
+      "id": "components_icons_bookglyph",
+      "community": 9,
+      "norm_label": "bookglyph()"
+    },
+    {
+      "label": "UploadGlyph()",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L25",
+      "id": "components_icons_uploadglyph",
+      "community": 9,
+      "norm_label": "uploadglyph()"
+    },
+    {
+      "label": "CheckGlyph()",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L44",
+      "id": "components_icons_checkglyph",
+      "community": 9,
+      "norm_label": "checkglyph()"
+    },
+    {
+      "label": "ArrowGlyph()",
+      "file_type": "code",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L61",
+      "id": "components_icons_arrowglyph",
+      "community": 9,
+      "norm_label": "arrowglyph()"
+    },
+    {
+      "label": "ConverterPage.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L1",
+      "id": "src_components_converterpage_tsx",
+      "community": 9,
+      "norm_label": "converterpage.tsx"
+    },
+    {
+      "label": "NavLink()",
+      "file_type": "code",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L15",
+      "id": "components_converterpage_navlink",
+      "community": 9,
+      "norm_label": "navlink()"
+    },
+    {
+      "label": "ConverterPage()",
+      "file_type": "code",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L39",
+      "id": "components_converterpage_converterpage",
+      "community": 9,
+      "norm_label": "converterpage()"
+    },
+    {
+      "label": "epubToPdf.ts",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L1",
+      "id": "src_lib_epubtopdf_ts",
+      "community": 3,
+      "norm_label": "epubtopdf.ts"
+    },
+    {
+      "label": "PdfPageSize",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L15",
+      "id": "lib_epubtopdf_pdfpagesize",
+      "community": 3,
+      "norm_label": "pdfpagesize"
+    },
+    {
+      "label": "EpubToPdfOptions",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L17",
+      "id": "lib_epubtopdf_epubtopdfoptions",
+      "community": 3,
+      "norm_label": "epubtopdfoptions"
+    },
+    {
+      "label": "EpubToPdfResult",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L22",
+      "id": "lib_epubtopdf_epubtopdfresult",
+      "community": 3,
+      "norm_label": "epubtopdfresult"
+    },
+    {
+      "label": "Block",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L29",
+      "id": "lib_epubtopdf_block",
+      "community": 3,
+      "norm_label": "block"
+    },
+    {
+      "label": "dirname()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L36",
+      "id": "lib_epubtopdf_dirname",
+      "community": 3,
+      "norm_label": "dirname()"
+    },
+    {
+      "label": "resolvePath()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L42",
+      "id": "lib_epubtopdf_resolvepath",
+      "community": 3,
+      "norm_label": "resolvepath()"
+    },
+    {
+      "label": "findEntry()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L60",
+      "id": "lib_epubtopdf_findentry",
+      "community": 3,
+      "norm_label": "findentry()"
+    },
+    {
+      "label": "readText()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L72",
+      "id": "lib_epubtopdf_readtext",
+      "community": 3,
+      "norm_label": "readtext()"
+    },
+    {
+      "label": "parseXml()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L77",
+      "id": "lib_epubtopdf_parsexml",
+      "community": 3,
+      "norm_label": "parsexml()"
+    },
+    {
+      "label": "firstByLocalName()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L82",
+      "id": "lib_epubtopdf_firstbylocalname",
+      "community": 3,
+      "norm_label": "firstbylocalname()"
+    },
+    {
+      "label": "EpubManifest",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L90",
+      "id": "lib_epubtopdf_epubmanifest",
+      "community": 3,
+      "norm_label": "epubmanifest"
+    },
+    {
+      "label": "parseEpub()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L100",
+      "id": "lib_epubtopdf_parseepub",
+      "community": 3,
+      "norm_label": "parseepub()"
+    },
+    {
+      "label": "HEADINGS",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L156",
+      "id": "lib_epubtopdf_headings",
+      "community": 3,
+      "norm_label": "headings"
+    },
+    {
+      "label": "TEXT_BLOCKS",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L164",
+      "id": "lib_epubtopdf_text_blocks",
+      "community": 3,
+      "norm_label": "text_blocks"
+    },
+    {
+      "label": "normalizeWhitespace()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L177",
+      "id": "lib_epubtopdf_normalizewhitespace",
+      "community": 3,
+      "norm_label": "normalizewhitespace()"
+    },
+    {
+      "label": "extractBlocks()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L182",
+      "id": "lib_epubtopdf_extractblocks",
+      "community": 3,
+      "norm_label": "extractblocks()"
+    },
+    {
+      "label": "imageFormat()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L237",
+      "id": "lib_epubtopdf_imageformat",
+      "community": 3,
+      "norm_label": "imageformat()"
+    },
+    {
+      "label": "loadImageSize()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L245",
+      "id": "lib_epubtopdf_loadimagesize",
+      "community": 3,
+      "norm_label": "loadimagesize()"
+    },
+    {
+      "label": "sanitizeForPdf()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L257",
+      "id": "lib_epubtopdf_sanitizeforpdf",
+      "community": 3,
+      "norm_label": "sanitizeforpdf()"
+    },
+    {
+      "label": "sanitize()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L266",
+      "id": "lib_epubtopdf_sanitize",
+      "community": 3,
+      "norm_label": "sanitize()"
+    },
+    {
+      "label": "convertEpubToPdf()",
+      "file_type": "code",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L272",
+      "id": "lib_epubtopdf_convertepubtopdf",
+      "community": 3,
+      "norm_label": "convertepubtopdf()"
+    },
+    {
+      "label": "buildEpub.ts",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L1",
+      "id": "src_lib_buildepub_ts",
+      "community": 2,
+      "norm_label": "buildepub.ts"
+    },
+    {
+      "label": "EpubCover",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L4",
+      "id": "lib_buildepub_epubcover",
+      "community": 2,
+      "norm_label": "epubcover"
+    },
+    {
+      "label": "EpubOptions",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L10",
+      "id": "lib_buildepub_epuboptions",
+      "community": 2,
+      "norm_label": "epuboptions"
+    },
+    {
+      "label": "buildEpub()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L19",
+      "id": "lib_buildepub_buildepub",
+      "community": 2,
+      "norm_label": "buildepub()"
+    },
+    {
+      "label": "pad()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L64",
+      "id": "lib_buildepub_pad",
+      "community": 2,
+      "norm_label": "pad()"
+    },
+    {
+      "label": "escapeXml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L68",
+      "id": "lib_buildepub_escapexml",
+      "community": 2,
+      "norm_label": "escapexml()"
+    },
+    {
+      "label": "escapeHtml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L77",
+      "id": "lib_buildepub_escapehtml",
+      "community": 2,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "randomUuid()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L84",
+      "id": "lib_buildepub_randomuuid",
+      "community": 2,
+      "norm_label": "randomuuid()"
+    },
+    {
+      "label": "containerXml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L97",
+      "id": "lib_buildepub_containerxml",
+      "community": 2,
+      "norm_label": "containerxml()"
+    },
+    {
+      "label": "stylesCss()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L107",
+      "id": "lib_buildepub_stylescss",
+      "community": 2,
+      "norm_label": "stylescss()"
+    },
+    {
+      "label": "chapterXhtml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L115",
+      "id": "lib_buildepub_chapterxhtml",
+      "community": 2,
+      "norm_label": "chapterxhtml()"
+    },
+    {
+      "label": "OpfArgs",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L135",
+      "id": "lib_buildepub_opfargs",
+      "community": 2,
+      "norm_label": "opfargs"
+    },
+    {
+      "label": "contentOpf()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L145",
+      "id": "lib_buildepub_contentopf",
+      "community": 2,
+      "norm_label": "contentopf()"
+    },
+    {
+      "label": "coverXhtml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L186",
+      "id": "lib_buildepub_coverxhtml",
+      "community": 2,
+      "norm_label": "coverxhtml()"
+    },
+    {
+      "label": "navXhtml()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L202",
+      "id": "lib_buildepub_navxhtml",
+      "community": 2,
+      "norm_label": "navxhtml()"
+    },
+    {
+      "label": "tocNcx()",
+      "file_type": "code",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L225",
+      "id": "lib_buildepub_tocncx",
+      "community": 2,
+      "norm_label": "tocncx()"
+    },
+    {
+      "label": "structure.ts",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L1",
+      "id": "src_lib_structure_ts",
+      "community": 2,
+      "norm_label": "structure.ts"
+    },
+    {
+      "label": "Chapter",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L1",
+      "id": "lib_structure_chapter",
+      "community": 2,
+      "norm_label": "chapter"
+    },
+    {
+      "label": "isChapterHeading()",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L12",
+      "id": "lib_structure_ischapterheading",
+      "community": 2,
+      "norm_label": "ischapterheading()"
+    },
+    {
+      "label": "buildChapters()",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L22",
+      "id": "lib_structure_buildchapters",
+      "community": 2,
+      "norm_label": "buildchapters()"
+    },
+    {
+      "label": "linesToParagraphs()",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L63",
+      "id": "lib_structure_linestoparagraphs",
+      "community": 2,
+      "norm_label": "linestoparagraphs()"
+    },
+    {
+      "label": "formatHeading()",
+      "file_type": "code",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L91",
+      "id": "lib_structure_formatheading",
+      "community": 2,
+      "norm_label": "formatheading()"
+    },
+    {
+      "label": "pdfExtract.ts",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L1",
+      "id": "src_lib_pdfextract_ts",
+      "community": 1,
+      "norm_label": "pdfextract.ts"
+    },
+    {
+      "label": "PdfMeta",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L11",
+      "id": "lib_pdfextract_pdfmeta",
+      "community": 1,
+      "norm_label": "pdfmeta"
+    },
+    {
+      "label": "CoverImage",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L16",
+      "id": "lib_pdfextract_coverimage",
+      "community": 1,
+      "norm_label": "coverimage"
+    },
+    {
+      "label": "PageProgress",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L22",
+      "id": "lib_pdfextract_pageprogress",
+      "community": 1,
+      "norm_label": "pageprogress"
+    },
+    {
+      "label": "openPdf()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L24",
+      "id": "lib_pdfextract_openpdf",
+      "community": 1,
+      "norm_label": "openpdf()"
+    },
+    {
+      "label": "getPdfMetadata()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L29",
+      "id": "lib_pdfextract_getpdfmetadata",
+      "community": 1,
+      "norm_label": "getpdfmetadata()"
+    },
+    {
+      "label": "extractAllText()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L46",
+      "id": "lib_pdfextract_extractalltext",
+      "community": 1,
+      "norm_label": "extractalltext()"
+    },
+    {
+      "label": "extractTextSample()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L61",
+      "id": "lib_pdfextract_extracttextsample",
+      "community": 1,
+      "norm_label": "extracttextsample()"
+    },
+    {
+      "label": "renderCover()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L76",
+      "id": "lib_pdfextract_rendercover",
+      "community": 1,
+      "norm_label": "rendercover()"
+    },
+    {
+      "label": "renderPageToCanvas()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L90",
+      "id": "lib_pdfextract_renderpagetocanvas",
+      "community": 1,
+      "norm_label": "renderpagetocanvas()"
+    },
+    {
+      "label": "renderPageToCover()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L121",
+      "id": "lib_pdfextract_renderpagetocover",
+      "community": 1,
+      "norm_label": "renderpagetocover()"
+    },
+    {
+      "label": "itemsToText()",
+      "file_type": "code",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L137",
+      "id": "lib_pdfextract_itemstotext",
+      "community": 1,
+      "norm_label": "itemstotext()"
+    },
+    {
+      "label": "ocr.ts",
+      "file_type": "code",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L1",
+      "id": "src_lib_ocr_ts",
+      "community": 1,
+      "norm_label": "ocr.ts"
+    },
+    {
+      "label": "OcrAbortSignal",
+      "file_type": "code",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L7",
+      "id": "lib_ocr_ocrabortsignal",
+      "community": 1,
+      "norm_label": "ocrabortsignal"
+    },
+    {
+      "label": "looksScanned()",
+      "file_type": "code",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L14",
+      "id": "lib_ocr_looksscanned",
+      "community": 1,
+      "norm_label": "looksscanned()"
+    },
+    {
+      "label": "ocrAllPages()",
+      "file_type": "code",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L23",
+      "id": "lib_ocr_ocrallpages",
+      "community": 1,
+      "norm_label": "ocrallpages()"
+    },
+    {
+      "label": "convert.ts",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "id": "src_lib_convert_ts",
+      "community": 1,
+      "norm_label": "convert.ts"
+    },
+    {
+      "label": "InspectResult",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L18",
+      "id": "lib_convert_inspectresult",
+      "community": 1,
+      "norm_label": "inspectresult"
+    },
+    {
+      "label": "ConvertStage",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L25",
+      "id": "lib_convert_convertstage",
+      "community": 8,
+      "norm_label": "convertstage"
+    },
+    {
+      "label": "ConvertOptions",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L27",
+      "id": "lib_convert_convertoptions",
+      "community": 1,
+      "norm_label": "convertoptions"
+    },
+    {
+      "label": "ConvertResult",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L37",
+      "id": "lib_convert_convertresult",
+      "community": 1,
+      "norm_label": "convertresult"
+    },
+    {
+      "label": "inspectPdf()",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L46",
+      "id": "lib_convert_inspectpdf",
+      "community": 1,
+      "norm_label": "inspectpdf()"
+    },
+    {
+      "label": "convertPdfToEpub()",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L63",
+      "id": "lib_convert_convertpdftoepub",
+      "community": 1,
+      "norm_label": "convertpdftoepub()"
+    },
+    {
+      "label": "sanitize()",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L114",
+      "id": "lib_convert_sanitize",
+      "community": 1,
+      "norm_label": "sanitize()"
+    },
+    {
+      "label": "prettifyFilename()",
+      "file_type": "code",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L118",
+      "id": "lib_convert_prettifyfilename",
+      "community": 1,
+      "norm_label": "prettifyfilename()"
+    },
+    {
+      "label": "routes.ts",
+      "file_type": "code",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L1",
+      "id": "src_site_routes_ts",
+      "community": 0,
+      "norm_label": "routes.ts"
+    },
+    {
+      "label": "Route",
+      "file_type": "code",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L9",
+      "id": "site_routes_route",
+      "community": 0,
+      "norm_label": "route"
+    },
+    {
+      "label": "ROUTES",
+      "file_type": "code",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L11",
+      "id": "site_routes_routes",
+      "community": 0,
+      "norm_label": "routes"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L16",
+      "id": "site_routes_normalize",
+      "community": 0,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "resolveRoute()",
+      "file_type": "code",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L23",
+      "id": "site_routes_resolveroute",
+      "community": 0,
+      "norm_label": "resolveroute()"
+    },
+    {
+      "label": "buildHead.ts",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L1",
+      "id": "src_site_buildhead_ts",
+      "community": 0,
+      "norm_label": "buildhead.ts"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L20",
+      "id": "site_buildhead_esc",
+      "community": 0,
+      "norm_label": "esc()"
+    },
+    {
+      "label": "jsonLd()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L29",
+      "id": "site_buildhead_jsonld",
+      "community": 0,
+      "norm_label": "jsonld()"
+    },
+    {
+      "label": "webSiteSchema()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L35",
+      "id": "site_buildhead_websiteschema",
+      "community": 0,
+      "norm_label": "websiteschema()"
+    },
+    {
+      "label": "appSchema()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L45",
+      "id": "site_buildhead_appschema",
+      "community": 0,
+      "norm_label": "appschema()"
+    },
+    {
+      "label": "faqSchema()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L63",
+      "id": "site_buildhead_faqschema",
+      "community": 0,
+      "norm_label": "faqschema()"
+    },
+    {
+      "label": "howToSchema()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L75",
+      "id": "site_buildhead_howtoschema",
+      "community": 0,
+      "norm_label": "howtoschema()"
+    },
+    {
+      "label": "breadcrumbSchema()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L91",
+      "id": "site_buildhead_breadcrumbschema",
+      "community": 0,
+      "norm_label": "breadcrumbschema()"
+    },
+    {
+      "label": "buildHead()",
+      "file_type": "code",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L111",
+      "id": "site_buildhead_buildhead",
+      "community": 0,
+      "norm_label": "buildhead()"
+    },
+    {
+      "label": "config.ts",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L1",
+      "id": "src_site_config_ts",
+      "community": 0,
+      "norm_label": "config.ts"
+    },
+    {
+      "label": "FaqItem",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L15",
+      "id": "site_config_faqitem",
+      "community": 0,
+      "norm_label": "faqitem"
+    },
+    {
+      "label": "HowToStep",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L16",
+      "id": "site_config_howtostep",
+      "community": 0,
+      "norm_label": "howtostep"
+    },
+    {
+      "label": "Feature",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L17",
+      "id": "site_config_feature",
+      "community": 0,
+      "norm_label": "feature"
+    },
+    {
+      "label": "RelatedLink",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L18",
+      "id": "site_config_relatedlink",
+      "community": 0,
+      "norm_label": "relatedlink"
+    },
+    {
+      "label": "ConversionConfig",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L20",
+      "id": "site_config_conversionconfig",
+      "community": 0,
+      "norm_label": "conversionconfig"
+    },
+    {
+      "label": "canonicalUrl()",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L55",
+      "id": "site_config_canonicalurl",
+      "community": 0,
+      "norm_label": "canonicalurl()"
+    },
+    {
+      "label": "pdfToEpubConfig",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L59",
+      "id": "site_config_pdftoepubconfig",
+      "community": 0,
+      "norm_label": "pdftoepubconfig"
+    },
+    {
+      "label": "epubToPdfConfig",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L175",
+      "id": "site_config_epubtopdfconfig",
+      "community": 0,
+      "norm_label": "epubtopdfconfig"
+    },
+    {
+      "label": "ALL_CONFIGS",
+      "file_type": "code",
+      "source_file": "src/site/config.ts",
+      "source_location": "L287",
+      "id": "site_config_all_configs",
+      "community": 9,
+      "norm_label": "all_configs"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 10,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Convert2EPUB",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "pdf_to_epub_readme_convert2epub",
+      "community": 10,
+      "norm_label": "convert2epub"
+    },
+    {
+      "label": "How it works",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "pdf_to_epub_readme_how_it_works",
+      "community": 10,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Architecture: one template, many pages",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "pdf_to_epub_readme_architecture_one_template_many_pages",
+      "community": 10,
+      "norm_label": "architecture: one template, many pages"
+    },
+    {
+      "label": "Adding a new converter",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "id": "pdf_to_epub_readme_adding_a_new_converter",
+      "community": 10,
+      "norm_label": "adding a new converter"
+    },
+    {
+      "label": "Local development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "id": "pdf_to_epub_readme_local_development",
+      "community": 10,
+      "norm_label": "local development"
+    },
+    {
+      "label": "Production build",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "id": "pdf_to_epub_readme_production_build",
+      "community": 10,
+      "norm_label": "production build"
+    },
+    {
+      "label": "Limitations",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "id": "pdf_to_epub_readme_limitations",
+      "community": 10,
+      "norm_label": "limitations"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_node_json",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tsconfig_node_json",
+      "target": "pdf_to_epub_tsconfig_node_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_tsbuildinfofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_node_compileroptions",
+      "target": "pdf_to_epub_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "vercel_json",
+      "target": "pdf_to_epub_vercel_cleanurls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "vercel_json",
+      "target": "pdf_to_epub_vercel_redirects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel_json",
+      "target": "pdf_to_epub_vercel_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "vercel_json",
+      "target": "pdf_to_epub_vercel_trailingslash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_app_json",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tsconfig_app_json",
+      "target": "pdf_to_epub_tsconfig_app_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_tsbuildinfofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pdf_to_epub_tsconfig_app_compileroptions",
+      "target": "pdf_to_epub_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "pdf_to_epub_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_build_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_build_ssr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_prerender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_scripts",
+      "target": "pdf_to_epub_package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_jspdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_jszip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_pdfjs_dist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_dependencies",
+      "target": "pdf_to_epub_package_dependencies_tesseract_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_autoprefixer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_eslint_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_eslint_plugin_react_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_eslint_plugin_react_refresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_globals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_types_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_typescript_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "pdf_to_epub_package_devdependencies",
+      "target": "pdf_to_epub_package_devdependencies_vitejs_plugin_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "pdf_to_epub_tsconfig_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "pdf_to_epub_tsconfig_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prerender.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "prerender_js",
+      "target": "pdf_to_epub_prerender_dist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prerender.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "prerender_js",
+      "target": "pdf_to_epub_prerender_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prerender.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "prerender_js",
+      "target": "pdf_to_epub_prerender_llms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prerender.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "prerender_js",
+      "target": "pdf_to_epub_prerender_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prerender.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "prerender_js",
+      "target": "pdf_to_epub_prerender_template",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_entry_client_tsx",
+      "target": "site_routes_resolveroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_entry_client_tsx",
+      "target": "src_components_converterpage_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_entry_client_tsx",
+      "target": "src_entry_client_desc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_entry_client_tsx",
+      "target": "src_entry_client_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-client.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_entry_client_tsx",
+      "target": "src_site_routes_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "site_buildhead_buildhead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "site_config_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "site_routes_resolveroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "site_routes_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "src_components_converterpage_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "src_entry_server_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "src_site_buildhead_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "src_site_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_entry_server_tsx",
+      "target": "src_site_routes_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_entry_server_render",
+      "target": "site_buildhead_buildhead"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/entry-server.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_entry_server_render",
+      "target": "site_routes_resolveroute"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "src_converters_parts_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_converters_parts_tsx",
+      "target": "components_icons_uploadglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "src_converters_parts_tsx",
+      "target": "converters_parts_doneview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_converters_parts_tsx",
+      "target": "converters_parts_dropzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_converters_parts_tsx",
+      "target": "converters_parts_progressview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/parts.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_converters_parts_tsx",
+      "target": "src_components_icons_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "src_converters_parts_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_parts_dropzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_parts_dropzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_parts_progressview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_parts_progressview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_parts_doneview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_parts_doneview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_pdftoepubconverter_formatduration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_pdftoepubconverter_pdftoepubconverter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "converters_pdftoepubconverter_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "lib_convert_convertstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_converters_pdftoepubconverter_tsx",
+      "target": "src_lib_convert_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "src_converters_pdftoepubconverter_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/PdfToEpubConverter.tsx",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "converters_pdftoepubconverter_pdftoepubconverter",
+      "target": "converters_pdftoepubconverter_formatduration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_epubtopdfconverter_epubtopdfconverter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_epubtopdfconverter_page_sizes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "converters_epubtopdfconverter_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "lib_epubtopdf_pdfpagesize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/converters/EpubToPdfConverter.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_converters_epubtopdfconverter_tsx",
+      "target": "src_lib_epubtopdf_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "src_converters_epubtopdfconverter_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "src_components_icons_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_components_icons_tsx",
+      "target": "components_icons_arrowglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_icons_tsx",
+      "target": "components_icons_bookglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_components_icons_tsx",
+      "target": "components_icons_checkglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_icons_tsx",
+      "target": "components_icons_iconprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/icons.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_components_icons_tsx",
+      "target": "components_icons_uploadglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "components_icons_bookglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "components_icons_checkglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "components_icons_arrowglyph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "components_converterpage_converterpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "components_converterpage_navlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "site_config_all_configs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "site_config_conversionconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConverterPage.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_converterpage_tsx",
+      "target": "src_site_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_block",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_convertepubtopdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_epubmanifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_epubtopdfoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_epubtopdfresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_extractblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_findentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_firstbylocalname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_headings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_imageformat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_loadimagesize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_normalizewhitespace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_parseepub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_parsexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_pdfpagesize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_readtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_resolvepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_sanitizeforpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "src_lib_epubtopdf_ts",
+      "target": "lib_epubtopdf_text_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L365",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_parseepub",
+      "target": "lib_epubtopdf_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_parseepub",
+      "target": "lib_epubtopdf_resolvepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_readtext",
+      "target": "lib_epubtopdf_findentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_readtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_parseepub",
+      "target": "lib_epubtopdf_readtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L363",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_parsexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_parseepub",
+      "target": "lib_epubtopdf_parsexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_parseepub",
+      "target": "lib_epubtopdf_firstbylocalname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_parseepub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L365",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_extractblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/epubToPdf.ts",
+      "source_location": "L399",
+      "weight": 1.0,
+      "source": "lib_epubtopdf_convertepubtopdf",
+      "target": "lib_epubtopdf_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_buildepub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_chapterxhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_containerxml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_contentopf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_coverxhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_epubcover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_epuboptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_escapexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_navxhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_opfargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_pad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_randomuuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_stylescss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L225",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_buildepub_tocncx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "lib_structure_chapter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_buildepub_ts",
+      "target": "src_lib_structure_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "src_lib_buildepub_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_containerxml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_contentopf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_coverxhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_navxhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_randomuuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_stylescss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "lib_buildepub_buildepub",
+      "target": "lib_buildepub_tocncx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_buildepub_buildepub"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_buildepub_buildepub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "lib_buildepub_contentopf",
+      "target": "lib_buildepub_escapexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "lib_buildepub_tocncx",
+      "target": "lib_buildepub_escapexml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/buildEpub.ts",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "lib_buildepub_chapterxhtml",
+      "target": "lib_buildepub_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "src_lib_structure_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_lib_structure_ts",
+      "target": "lib_structure_buildchapters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_structure_ts",
+      "target": "lib_structure_chapter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "src_lib_structure_ts",
+      "target": "lib_structure_formatheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_lib_structure_ts",
+      "target": "lib_structure_ischapterheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_lib_structure_ts",
+      "target": "lib_structure_linestoparagraphs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "lib_structure_buildchapters",
+      "target": "lib_structure_ischapterheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_structure_buildchapters"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "lib_structure_buildchapters",
+      "target": "lib_structure_formatheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/structure.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "lib_structure_buildchapters",
+      "target": "lib_structure_linestoparagraphs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_structure_buildchapters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "src_lib_pdfextract_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "src_lib_pdfextract_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_coverimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_extractalltext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_extracttextsample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_getpdfmetadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_itemstotext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_openpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_pageprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_pdfmeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_rendercover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_renderpagetocanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "src_lib_pdfextract_ts",
+      "target": "lib_pdfextract_renderpagetocover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_pdfmeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "lib_pdfextract_pageprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_pdfextract_openpdf"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "lib_convert_inspectpdf",
+      "target": "lib_pdfextract_openpdf"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_openpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_pdfextract_getpdfmetadata"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "lib_convert_inspectpdf",
+      "target": "lib_pdfextract_getpdfmetadata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_getpdfmetadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_pdfextract_extractalltext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "lib_pdfextract_extractalltext",
+      "target": "lib_pdfextract_itemstotext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_extractalltext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "lib_convert_inspectpdf",
+      "target": "lib_pdfextract_extracttextsample"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "lib_pdfextract_extracttextsample",
+      "target": "lib_pdfextract_itemstotext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_extracttextsample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_pdfextract_rendercover"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "lib_pdfextract_rendercover",
+      "target": "lib_pdfextract_renderpagetocover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_pdfextract_rendercover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "lib_ocr_ocrallpages",
+      "target": "lib_pdfextract_renderpagetocanvas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/pdfExtract.ts",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "lib_pdfextract_renderpagetocover",
+      "target": "lib_pdfextract_renderpagetocanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "lib_pdfextract_renderpagetocanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "src_lib_ocr_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "lib_ocr_looksscanned",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "lib_ocr_ocrabortsignal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/ocr.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_lib_ocr_ts",
+      "target": "lib_ocr_ocrallpages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_ocr_ocrabortsignal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "lib_convert_inspectpdf",
+      "target": "lib_ocr_looksscanned"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_ocr_looksscanned",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_ocr_ocrallpages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_ocr_ocrallpages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_convertoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_convertpdftoepub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_convertresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_convertstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_inspectpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_inspectresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_prettifyfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "src_lib_convert_ts",
+      "target": "lib_convert_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_convert_prettifyfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/convert.ts",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "lib_convert_convertpdftoepub",
+      "target": "lib_convert_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_config_conversionconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_config_epubtopdfconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_config_pdftoepubconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_routes_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_routes_resolveroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_routes_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "site_routes_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_site_routes_ts",
+      "target": "src_site_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/routes.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "site_routes_resolveroute",
+      "target": "site_routes_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_appschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_breadcrumbschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_buildhead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_faqschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_howtoschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_jsonld",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_buildhead_websiteschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_config_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "site_config_conversionconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_site_buildhead_ts",
+      "target": "src_site_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_websiteschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "site_buildhead_appschema",
+      "target": "site_config_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_appschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_faqschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_howtoschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "site_buildhead_breadcrumbschema",
+      "target": "site_config_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_buildhead_breadcrumbschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/site/buildHead.ts",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "site_buildhead_buildhead",
+      "target": "site_config_canonicalurl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_all_configs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_conversionconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_epubtopdfconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_faqitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_feature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_howtostep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_pdftoepubconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/site/config.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_site_config_ts",
+      "target": "site_config_relatedlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "pdf_to_epub_readme_convert2epub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_convert2epub",
+      "target": "pdf_to_epub_readme_architecture_one_template_many_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_convert2epub",
+      "target": "pdf_to_epub_readme_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_convert2epub",
+      "target": "pdf_to_epub_readme_limitations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_convert2epub",
+      "target": "pdf_to_epub_readme_local_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_convert2epub",
+      "target": "pdf_to_epub_readme_production_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "pdf_to_epub_readme_architecture_one_template_many_pages",
+      "target": "pdf_to_epub_readme_adding_a_new_converter",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "10d2007576318c83c2f89176ff6e8e6e70052145"
+}
