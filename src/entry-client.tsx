@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
 import ConverterPage from "./components/ConverterPage";
 import { resolveRoute } from "./site/routes";
@@ -21,6 +22,7 @@ const rootEl = document.getElementById("root")!;
 const app = (
   <StrictMode>
     <ConverterPage config={route.config} Widget={route.Widget} />
+    <Analytics />
   </StrictMode>
 );
 
