@@ -151,63 +151,74 @@ export default function PdfToEpubConverter() {
   };
 
   return (
-    <div className="bg-white dark:bg-stone-800 rounded-xl shadow-[0_10px_40px_-12px_rgba(110,81,40,0.25)] dark:shadow-2xl ring-1 ring-stone-200 dark:ring-stone-700 p-6 md:p-8 space-y-5">
-      <div className="grid grid-cols-2 gap-3">
-        <label className="block">
-          <span className="text-xs font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
-            Title
-          </span>
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Auto-detect"
-            className="mt-1 w-full rounded-md border border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-900 px-3 py-2 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-paper-500 focus:border-paper-500 transition"
-          />
-        </label>
-        <label className="block">
-          <span className="text-xs font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
-            Author
-          </span>
-          <input
-            type="text"
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-            placeholder="Auto-detect"
-            className="mt-1 w-full rounded-md border border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-900 px-3 py-2 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-paper-500 focus:border-paper-500 transition"
-          />
-        </label>
-      </div>
-
-      <div className="space-y-2 pt-1">
-        <label className="flex items-start gap-2 text-sm text-stone-700 dark:text-stone-200 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={detectChapters}
-            onChange={(e) => setDetectChapters(e.target.checked)}
-            className="mt-0.5 rounded border-stone-300 text-paper-600 focus:ring-paper-500"
-          />
-          <span>Detect chapters (split on “Chapter N”, “Prologue”, etc.)</span>
-        </label>
-        <label className="flex items-start gap-2 text-sm text-stone-700 dark:text-stone-200 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={includeCover}
-            onChange={(e) => setIncludeCover(e.target.checked)}
-            className="mt-0.5 rounded border-stone-300 text-paper-600 focus:ring-paper-500"
-          />
-          <span>Use the PDF's first page as the cover image</span>
-        </label>
-      </div>
-
+    <div className="space-y-4">
       {(status.kind === "idle" || status.kind === "error") && (
-        <Dropzone
-          accept="application/pdf,.pdf"
-          title="Drop a PDF here, or click to choose"
-          hint="Text-based PDFs are quick · scanned PDFs are detected automatically and run through OCR"
-          error={status.kind === "error" ? status.message : undefined}
-          onFile={handleFile}
-        />
+        <>
+          <Dropzone
+            accept="application/pdf,.pdf"
+            title="Drop a PDF here, or click to choose"
+            hint="Converts instantly, right on your device"
+            error={status.kind === "error" ? status.message : undefined}
+            onFile={handleFile}
+          />
+
+          <details className="group rounded-xl bg-[#fcf7ee] dark:bg-stone-800/50 ring-1 ring-paper-500/15 dark:ring-stone-700 px-5 py-3.5">
+            <summary className="flex items-center justify-between cursor-pointer list-none text-sm font-medium text-stone-600 dark:text-stone-300">
+              <span>Options — title, author, chapters</span>
+              <span className="ml-4 shrink-0 text-paper-700 dark:text-paper-400 transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <label className="block">
+                <span className="text-xs font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
+                  Title
+                </span>
+                <input
+                  type="text"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  placeholder="Auto-detect"
+                  className="mt-1 w-full rounded-md border border-paper-500/30 dark:border-stone-600 bg-white dark:bg-stone-900 px-3 py-2 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-paper-500 focus:border-paper-500 transition"
+                />
+              </label>
+              <label className="block">
+                <span className="text-xs font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
+                  Author
+                </span>
+                <input
+                  type="text"
+                  value={author}
+                  onChange={(e) => setAuthor(e.target.value)}
+                  placeholder="Auto-detect"
+                  className="mt-1 w-full rounded-md border border-paper-500/30 dark:border-stone-600 bg-white dark:bg-stone-900 px-3 py-2 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-paper-500 focus:border-paper-500 transition"
+                />
+              </label>
+            </div>
+
+            <div className="space-y-2 mt-3">
+              <label className="flex items-start gap-2 text-sm text-stone-600 dark:text-stone-200 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={detectChapters}
+                  onChange={(e) => setDetectChapters(e.target.checked)}
+                  className="mt-0.5 rounded border-stone-300 text-paper-600 focus:ring-paper-500"
+                />
+                <span>Detect chapters (split on “Chapter N”, “Prologue”, etc.)</span>
+              </label>
+              <label className="flex items-start gap-2 text-sm text-stone-600 dark:text-stone-200 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={includeCover}
+                  onChange={(e) => setIncludeCover(e.target.checked)}
+                  className="mt-0.5 rounded border-stone-300 text-paper-600 focus:ring-paper-500"
+                />
+                <span>Use the PDF's first page as the cover image</span>
+              </label>
+            </div>
+          </details>
+        </>
       )}
 
       {status.kind === "inspecting" && (

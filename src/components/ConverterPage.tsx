@@ -10,29 +10,32 @@ import {
   ALL_CONFIGS,
   type ConversionConfig,
 } from "../site/config";
-import { ArrowGlyph, BookGlyph, CheckGlyph } from "./icons";
+import { ArrowGlyph, BookGlyph, CheckGlyph, LockGlyph } from "./icons";
 
-function NavLink({
-  href,
-  active,
-  children,
-}: {
-  href: string;
-  active?: boolean;
-  children: React.ReactNode;
-}) {
+// Segmented control that swaps conversion direction. Each segment is a real link
+// to that converter's page, so the two-page SEO architecture is preserved — the
+// toggle is just a prettier way to move between them.
+function DirectionToggle({ current }: { current: string }) {
   return (
-    <a
-      href={href}
-      aria-current={active ? "page" : undefined}
-      className={`transition ${
-        active
-          ? "text-stone-950 dark:text-white font-medium"
-          : "text-stone-800 dark:text-paper-100 hover:text-stone-950 dark:hover:text-white"
-      }`}
-    >
-      {children}
-    </a>
+    <div className="inline-flex rounded-lg bg-[#efe3d1] dark:bg-stone-800 p-1">
+      {ALL_CONFIGS.map((c) => {
+        const active = c.path === current;
+        return (
+          <a
+            key={c.path}
+            href={c.path}
+            aria-current={active ? "page" : undefined}
+            className={`rounded-md px-4 py-1.5 text-sm font-medium transition ${
+              active
+                ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-paper-50 shadow-sm"
+                : "text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"
+            }`}
+          >
+            {c.fromFormat} → {c.toFormat}
+          </a>
+        );
+      })}
+    </div>
   );
 }
 
@@ -45,24 +48,20 @@ export default function ConverterPage({
 }) {
   return (
     <div className="min-h-screen font-sans text-stone-800 dark:text-stone-200">
-      <header className="bg-paper-500 dark:bg-stone-800/90 border-b border-paper-700/30 dark:border-stone-700 backdrop-blur">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
-          <a href="/" className="flex shrink-0 items-center gap-2 group">
-            <BookGlyph className="h-6 w-6 text-stone-900 dark:text-paper-100" />
+      <header>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-5 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <a href="/" className="flex shrink-0 items-center gap-2.5 group">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#ecdcc4] dark:bg-stone-800">
+              <BookGlyph className="h-5 w-5 text-paper-800 dark:text-paper-300" />
+            </span>
             <span className="font-serif text-xl font-semibold tracking-tight text-stone-900 dark:text-paper-50 group-hover:text-stone-700 dark:group-hover:text-paper-100 transition">
               {SITE_NAME}
             </span>
           </a>
-          <nav className="flex items-center gap-4 sm:gap-5 text-sm whitespace-nowrap">
-            <NavLink href="/" active={config.path === "/"}>
-              PDF to EPUB
-            </NavLink>
-            <NavLink href="/epub-to-pdf" active={config.path === "/epub-to-pdf"}>
-              EPUB to PDF
-            </NavLink>
+          <nav className="flex items-center gap-5 sm:gap-6 text-sm whitespace-nowrap">
             <a
               href="#how-to"
-              className="hidden sm:inline text-stone-800 dark:text-paper-100 hover:text-stone-950 dark:hover:text-white transition"
+              className="text-stone-600 dark:text-paper-100 hover:text-stone-900 dark:hover:text-white transition"
             >
               How it works
             </a>
@@ -70,7 +69,7 @@ export default function ConverterPage({
               href={GITHUB_URL}
               target="_blank"
               rel="noreferrer"
-              className="hidden sm:inline text-stone-800 dark:text-paper-100 hover:text-stone-950 dark:hover:text-white transition"
+              className="text-stone-600 dark:text-paper-100 hover:text-stone-900 dark:hover:text-white transition"
             >
               GitHub
             </a>
@@ -80,44 +79,53 @@ export default function ConverterPage({
 
       <main>
         {/* Hero + tool, above the fold */}
-        <section className="max-w-2xl mx-auto px-4 pt-12 pb-6 md:pt-16 md:pb-8">
+        <section className="max-w-2xl mx-auto px-4 pt-10 pb-6 md:pt-16 md:pb-8">
           <div className="text-center mb-8">
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-stone-900 dark:text-paper-50 leading-tight tracking-tight">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#f0e5d3] dark:bg-stone-800 px-3.5 py-1.5 text-xs font-medium text-paper-800 dark:text-paper-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400" />
+              100% private · runs in your browser
+            </span>
+            <h1 className="mt-5 font-serif text-4xl md:text-5xl font-semibold text-stone-900 dark:text-paper-50 leading-[1.1] tracking-tight">
               {config.h1}
             </h1>
-            <p className="mt-4 text-stone-800 dark:text-stone-200 text-lg font-medium max-w-lg mx-auto">
+            <p className="mt-5 text-stone-600 dark:text-stone-300 text-lg max-w-lg mx-auto leading-relaxed">
               {config.introLead}
             </p>
-            <p className="mt-3 text-stone-700 dark:text-stone-300 text-base max-w-lg mx-auto leading-relaxed">
+            <p className="mt-3 text-stone-500 dark:text-stone-400 text-base max-w-lg mx-auto leading-relaxed">
               {config.introBody}
             </p>
           </div>
 
+          <div className="flex justify-center mb-6">
+            <DirectionToggle current={config.path} />
+          </div>
+
           <Widget />
 
-          <p className="text-center text-xs text-stone-600 dark:text-stone-400 mt-6">
+          <p className="flex items-center justify-center gap-2 text-center text-xs text-stone-500 dark:text-stone-400 mt-6">
+            <LockGlyph className="h-3.5 w-3.5 shrink-0" />
             {config.trustLine}
           </p>
         </section>
 
         {/* How it works */}
-        <section id="how-to" className="max-w-3xl mx-auto px-4 py-10 scroll-mt-20">
+        <section id="how-to" className="max-w-3xl mx-auto px-4 py-12 scroll-mt-20">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 text-center mb-8">
             {config.howToHeading}
           </h2>
-          <div className="grid sm:grid-cols-3 gap-4 text-center">
+          <div className="grid sm:grid-cols-3 gap-4">
             {config.steps.map((step, i) => (
               <div
                 key={i}
-                className="rounded-lg bg-white/60 dark:bg-stone-800/40 ring-1 ring-stone-200/70 dark:ring-stone-700/70 p-5 backdrop-blur"
+                className="rounded-xl bg-[#fcf7ee] dark:bg-stone-800/40 ring-1 ring-paper-500/15 dark:ring-stone-700/70 p-5"
               >
-                <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-paper-500 text-stone-900 font-serif text-sm font-semibold mb-2">
+                <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#ecdcc4] dark:bg-stone-700 text-paper-800 dark:text-paper-300 font-serif text-sm font-semibold mb-3">
                   {i + 1}
                 </div>
-                <h3 className="font-serif text-lg font-semibold text-stone-900 dark:text-paper-50">
+                <h3 className="font-semibold text-stone-900 dark:text-paper-50">
                   {step.title}
                 </h3>
-                <p className="text-sm text-stone-600 dark:text-stone-300 mt-1 leading-relaxed">
+                <p className="text-sm text-stone-500 dark:text-stone-300 mt-1.5 leading-relaxed">
                   {step.body}
                 </p>
               </div>
@@ -126,19 +134,19 @@ export default function ConverterPage({
         </section>
 
         {/* Benefits */}
-        <section className="max-w-4xl mx-auto px-4 py-10">
+        <section className="max-w-4xl mx-auto px-4 py-12">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 text-center mb-8">
             {config.featuresHeading}
           </h2>
           <div className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
             {config.features.map((feature, i) => (
               <div key={i} className="flex gap-3">
-                <CheckGlyph className="h-5 w-5 mt-0.5 shrink-0 text-paper-600 dark:text-paper-400" />
+                <CheckGlyph className="h-5 w-5 mt-0.5 shrink-0 text-paper-700 dark:text-paper-400" />
                 <div>
                   <h3 className="font-semibold text-stone-900 dark:text-paper-50">
                     {feature.title}
                   </h3>
-                  <p className="text-sm text-stone-600 dark:text-stone-300 mt-0.5 leading-relaxed">
+                  <p className="text-sm text-stone-500 dark:text-stone-300 mt-0.5 leading-relaxed">
                     {feature.body}
                   </p>
                 </div>
@@ -148,7 +156,7 @@ export default function ConverterPage({
         </section>
 
         {/* Long-form explainer */}
-        <section className="max-w-2xl mx-auto px-4 py-10">
+        <section className="max-w-2xl mx-auto px-4 py-12">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 mb-5">
             {config.aboutHeading}
           </h2>
@@ -156,7 +164,7 @@ export default function ConverterPage({
             {config.aboutParas.map((para, i) => (
               <p
                 key={i}
-                className="text-stone-700 dark:text-stone-300 leading-relaxed"
+                className="text-stone-600 dark:text-stone-300 leading-relaxed"
               >
                 {para}
               </p>
@@ -165,7 +173,7 @@ export default function ConverterPage({
         </section>
 
         {/* FAQ */}
-        <section className="max-w-3xl mx-auto px-4 py-10">
+        <section className="max-w-3xl mx-auto px-4 py-12">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 text-center mb-8">
             {config.faqHeading}
           </h2>
@@ -173,15 +181,15 @@ export default function ConverterPage({
             {config.faqs.map((faq, i) => (
               <details
                 key={i}
-                className="group rounded-lg bg-white/70 dark:bg-stone-800/50 ring-1 ring-stone-200 dark:ring-stone-700 px-5 py-4"
+                className="group rounded-xl bg-[#fcf7ee] dark:bg-stone-800/50 ring-1 ring-paper-500/15 dark:ring-stone-700 px-5 py-4"
               >
                 <summary className="flex items-center justify-between cursor-pointer list-none font-medium text-stone-900 dark:text-paper-50">
                   <span>{faq.q}</span>
-                  <span className="ml-4 shrink-0 text-paper-600 dark:text-paper-400 transition-transform group-open:rotate-45">
+                  <span className="ml-4 shrink-0 text-paper-700 dark:text-paper-400 transition-transform group-open:rotate-45">
                     +
                   </span>
                 </summary>
-                <p className="mt-3 text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+                <p className="mt-3 text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
                   {faq.a}
                 </p>
               </details>
@@ -190,7 +198,7 @@ export default function ConverterPage({
         </section>
 
         {/* Internal links to sibling converters */}
-        <section className="max-w-3xl mx-auto px-4 py-10">
+        <section className="max-w-3xl mx-auto px-4 py-12">
           <h2 className="font-serif text-xl font-semibold text-stone-900 dark:text-paper-50 mb-4">
             More converters
           </h2>
@@ -199,14 +207,14 @@ export default function ConverterPage({
               <a
                 key={link.path}
                 href={link.path}
-                className="group flex items-start gap-3 rounded-lg bg-white/70 dark:bg-stone-800/50 ring-1 ring-stone-200 dark:ring-stone-700 px-5 py-4 hover:ring-paper-500 dark:hover:ring-paper-500 transition"
+                className="group flex items-start gap-3 rounded-xl bg-[#fcf7ee] dark:bg-stone-800/50 ring-1 ring-paper-500/15 dark:ring-stone-700 px-5 py-4 hover:ring-paper-500 dark:hover:ring-paper-500 transition"
               >
-                <ArrowGlyph className="h-5 w-5 mt-0.5 shrink-0 text-paper-600 dark:text-paper-400 group-hover:translate-x-0.5 transition-transform" />
+                <ArrowGlyph className="h-5 w-5 mt-0.5 shrink-0 text-paper-700 dark:text-paper-400 group-hover:translate-x-0.5 transition-transform" />
                 <span>
                   <span className="block font-semibold text-stone-900 dark:text-paper-50">
                     {link.label}
                   </span>
-                  <span className="block text-sm text-stone-600 dark:text-stone-300 mt-0.5">
+                  <span className="block text-sm text-stone-500 dark:text-stone-300 mt-0.5">
                     {link.blurb}
                   </span>
                 </span>
@@ -216,26 +224,15 @@ export default function ConverterPage({
         </section>
       </main>
 
-      <footer className="border-t border-stone-200 dark:border-stone-800 mt-4">
-        <div className="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-600 dark:text-stone-400">
-          <nav className="flex items-center gap-4">
-            {ALL_CONFIGS.map((c) => (
-              <a
-                key={c.path}
-                href={c.path}
-                className="hover:text-stone-900 dark:hover:text-paper-100 transition"
-              >
-                {c.h1.replace(" Converter", "")}
-              </a>
-            ))}
-          </nav>
+      <footer className="border-t border-paper-500/15 dark:border-stone-800 mt-4">
+        <div className="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-stone-500 dark:text-stone-400">
           <p>
             Runs entirely in your browser ·{" "}
             <a
               href={GITHUB_URL}
               target="_blank"
               rel="noreferrer"
-              className="underline decoration-paper-500 underline-offset-2 hover:text-stone-900 dark:hover:text-paper-100"
+              className="text-paper-700 dark:text-paper-400 hover:text-paper-800 dark:hover:text-paper-300 transition"
             >
               Open source
             </a>

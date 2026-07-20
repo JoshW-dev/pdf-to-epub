@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Lora", "Georgia", "Cambria", "Times New Roman", "serif"],
+        serif: ["Spectral", "Georgia", "Cambria", "Times New Roman", "serif"],
         sans: [
-          "Inter",
+          "IBM Plex Sans",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",

@@ -48,17 +48,19 @@ export function Dropzone({
       onDragLeave={() => setDragOver(false)}
       onDrop={drop}
       onClick={() => inputRef.current?.click()}
-      className={`border-2 border-dashed rounded-xl px-6 py-12 text-center cursor-pointer transition ${
+      className={`border border-dashed rounded-2xl px-6 py-14 text-center cursor-pointer transition ${
         dragOver
-          ? "border-paper-500 bg-paper-50 dark:bg-paper-900/20"
-          : "border-stone-300 dark:border-stone-600 hover:border-paper-500 hover:bg-paper-50/50 dark:hover:bg-paper-900/10"
+          ? "border-paper-500 bg-paper-100/60 dark:bg-paper-900/20"
+          : "border-paper-500/50 bg-[#fcf7ee]/60 dark:border-stone-600 dark:bg-stone-800/40 hover:border-paper-500 hover:bg-paper-50 dark:hover:bg-paper-900/10"
       }`}
     >
-      <div className="flex justify-center mb-3">
-        <UploadGlyph className="h-8 w-8 text-paper-600 dark:text-paper-400" />
+      <div className="flex justify-center mb-4">
+        <span className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ecdcc4] dark:bg-paper-900/40">
+          <UploadGlyph className="h-6 w-6 text-paper-800 dark:text-paper-300" />
+        </span>
       </div>
-      <p className="text-stone-800 dark:text-stone-100 font-medium">{title}</p>
-      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">{hint}</p>
+      <p className="text-stone-900 dark:text-stone-100 font-semibold">{title}</p>
+      <p className="text-sm text-stone-500 dark:text-stone-400 mt-1.5">{hint}</p>
       <input
         ref={inputRef}
         type="file"

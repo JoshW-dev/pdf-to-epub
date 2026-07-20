@@ -64,37 +64,42 @@ export default function EpubToPdfConverter() {
   };
 
   return (
-    <div className="bg-white dark:bg-stone-800 rounded-xl shadow-[0_10px_40px_-12px_rgba(110,81,40,0.25)] dark:shadow-2xl ring-1 ring-stone-200 dark:ring-stone-700 p-6 md:p-8 space-y-5">
-      <label className="block">
-        <span className="text-xs font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
-          Page size
-        </span>
-        <div className="mt-1.5 inline-flex rounded-md ring-1 ring-stone-300 dark:ring-stone-600 overflow-hidden">
-          {PAGE_SIZES.map((opt) => (
-            <button
-              key={opt.value}
-              type="button"
-              onClick={() => setPageSize(opt.value)}
-              className={`px-4 py-2 text-sm font-medium transition ${
-                pageSize === opt.value
-                  ? "bg-stone-900 dark:bg-paper-500 text-paper-50 dark:text-stone-900"
-                  : "bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800"
-              }`}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-      </label>
-
+    <div className="space-y-4">
       {(status.kind === "idle" || status.kind === "error") && (
-        <Dropzone
-          accept="application/epub+zip,.epub"
-          title="Drop an EPUB here, or click to choose"
-          hint="Text and images are laid out into a clean, paginated PDF — chapters in reading order"
-          error={status.kind === "error" ? status.message : undefined}
-          onFile={handleFile}
-        />
+        <>
+          <Dropzone
+            accept="application/epub+zip,.epub"
+            title="Drop an EPUB here, or click to choose"
+            hint="Converts instantly, right on your device"
+            error={status.kind === "error" ? status.message : undefined}
+            onFile={handleFile}
+          />
+
+          <details className="group rounded-xl bg-[#fcf7ee] dark:bg-stone-800/50 ring-1 ring-paper-500/15 dark:ring-stone-700 px-5 py-3.5">
+            <summary className="flex items-center justify-between cursor-pointer list-none text-sm font-medium text-stone-600 dark:text-stone-300">
+              <span>Options — page size</span>
+              <span className="ml-4 shrink-0 text-paper-700 dark:text-paper-400 transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+            <div className="mt-4 inline-flex rounded-md ring-1 ring-paper-500/30 dark:ring-stone-600 overflow-hidden">
+              {PAGE_SIZES.map((opt) => (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setPageSize(opt.value)}
+                  className={`px-4 py-2 text-sm font-medium transition ${
+                    pageSize === opt.value
+                      ? "bg-stone-900 dark:bg-paper-500 text-paper-50 dark:text-stone-900"
+                      : "bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </details>
+        </>
       )}
 
       {status.kind === "working" && (
