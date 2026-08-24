@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  // Class strategy: the OS preference no longer flips the site. The paper
+  // theme is the default, and dark styles only apply under a `.dark` root.
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {

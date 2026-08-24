@@ -11,6 +11,7 @@ import {
   type ConversionConfig,
 } from "../site/config";
 import { ArrowGlyph, BookGlyph, CheckGlyph, LockGlyph } from "./icons";
+import FormatFlow from "./FormatFlow";
 
 // Segmented control that swaps conversion direction. Each segment is a real link
 // to that converter's page, so the two-page SEO architecture is preserved — the
@@ -110,9 +111,14 @@ export default function ConverterPage({
 
         {/* How it works */}
         <section id="how-to" className="max-w-3xl mx-auto px-4 py-12 scroll-mt-20">
-          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 text-center mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-paper-50 text-center mb-6">
             {config.howToHeading}
           </h2>
+          <FormatFlow
+            from={config.fromFormat}
+            to={config.toFormat}
+            className="mx-auto mb-8 w-full max-w-sm sm:max-w-md h-auto"
+          />
           <div className="grid sm:grid-cols-3 gap-4">
             {config.steps.map((step, i) => (
               <div

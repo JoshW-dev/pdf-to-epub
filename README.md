@@ -5,6 +5,8 @@ never leave your device — there's no upload, no server, and no account.
 
 **Live:** [convert2epub.online](https://convert2epub.online)
 
+![The Convert2EPUB home page: a PDF to EPUB converter with a drop zone for the file](docs/screenshot.png)
+
 Two working tools today:
 
 - **[PDF → EPUB](https://convert2epub.online/)** — turn a fixed-layout PDF into a
